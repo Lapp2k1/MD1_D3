@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>BÀI 1</h1>
+    <h3>Paragraph with divider</h3>
+    <hr />
+    <p>This is a <br />paragraph with a line break.</p>
+    <hr />
+    <br />
+    <h1>BÀI 2</h1>
+    <h1>Format text <span style="background-color: yellow">mark</span></h1>
+    <p>Please use only HTML without CSS.</p>
+    <br />
+    <hr />
+    <ul>
+      <li>This word is <em>emphasized</em></li>
+      <li>This word is <i>italic</i></li>
+      <li>This word is <sup>supcripted</sup></li>
+      <li>This word is <sub>subcripted</sub></li>
+      <li>This word is <ins>inserted</ins></li>
+      <li>This word is <del>deleted</del></li>
+    </ul>
+    <br />
+    <hr />
+    <h1>BÀI 3</h1>
+    <figure>
+      <img
+        width="300px"
+        height="200px"
+        src="https://images.squarespace-cdn.com/content/v1/628d4ef5c4daed01c4faa220/094d686c-7067-4cd1-b7d8-8744a292eed3/homebanner_v2.jpg"
+        alt=""
+      />
+      <figcaption>Taco and a Drink</figcaption>
+    </figure>
+    <hr />
+
+    <style>
+      .underline {
+        text-decoration: none;
+        border-bottom: 2px dotted rgb(0, 0, 0);
+        display: inline;
+      }
+    </style>
+
+    <h1>About <span class="underline">LTS</span></h1>
+    <p>
+      <span class="underline">LTS</span> was found in 2022. Our shop was built
+      from a <b>love of tacos</b> &#127790;&#127790;&#127790;.We hope our shop
+      add a unique and interesting place to our little town.
+    </p>
+    <h3>Taco Trivia</h3>
+    <p>&#9658;When did Taco first appear in United Stated?</p>
+    <br />
+    <hr />
+    <h1>Our Menu</h1>
+    <table>
+      <tr>
+        <th colspan="3">Our Tacos</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Crunchy</td>
+        <td>1</td>
+        <td>$1.50</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>$2.50</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>$3.25</td>
+      </tr>
+      <tr>
+        <td rowspan="3">Soft</td>
+        <td>1</td>
+        <td>$2.00</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>$3.50</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>$4.50</td>
+      </tr>
+      <tr>
+        <td colspan="2">Chips & Salsa</td>
+        <td>$2</td>
+      </tr>
+    </table>
+    <br />
+    <style>
+      #top-link {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: none;
+      }
+    </style>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        var topLink = document.getElementById("top-link");
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          topLink.style.display = "block";
+        } else {
+          topLink.style.display = "none";
+        }
+      }
+    </script>
+
+    <a href="#" id="top-link">Back to Top</a>
+    <hr />
+    <br />
+    <p>Copyright &copy;The Little Taco Shop</p>
+    <br />
+    <hr />
+    <h1>BÀI 4</h1>
+    <header>
+      <h2>Đây là header</h2>
+    </header>
+    <main>
+      <img
+        width="500px"
+        height="300px"
+        src="https://www.kensfi.com/wp-content/uploads/2019/11/ngon-ngu-lap-trinh-1-1024x538.jpg"
+        alt=""
+      />
+
+      <div>
+        <a href="#" target="_blank">HTML</a> |
+        <a href="#" target="_blank">CSS</a> |
+        <a href="#" target="_blank">JavaScript</a> |
+        <a href="#" target="_blank">Python</a>
+      </div>
+      <h2>Giới thiệu Framgia</h2>
+      <p>
+        Được thành lập vào tháng 10/2012, tại Hà Nội đến nay Framgia đã có ba
+        chi nhánh tại Hà Nội, Đà Nẵng và TP. HCM và có mặt tại 5 quốc gia tại
+        châu Á với gần 1000 nhân viên từ nhiều quốc gia trên thế giới như: Nhật
+        Bản, Bangladesh, Cambodia, Nigeria, Kazakstan. Đạt tốc độ phát triển
+        vượt bậc, từ khởi đầu chỉ với 5 thành viên, sau 5 năm Framgia Inc. đã
+        trở thành là tập đoàn Offshore IT của Nhật Bản lớn nhất tại Việt Nam.
+      </p>
+      <br />
+      <h1>FRAMGIA INC. – người bạn dẫn đầu xu hướng IT đến từ Nhật</h1>
+      <p>
+        Được thành lập vào tháng 10/2012, tại Hà Nội đến nay Framgia đã có ba
+        chỉ nhánh tại Hà Nội. Đà Nẵng và TP. HCM và có mặt tại 5 quốc gia tại
+        châu Á với gần 1000 nhân viên từ nhiều quốc gia trên thế giới như: Nhật
+        Bản, Bangladesh, Cambodia, Nigeria, Kazakstan. Đạt tốc độ phát triển
+        vượt bậc, từ khởi đầu chỉ với 5 thành viên, sau 5 năm Framgia Inc. đã
+        trở thành là tập đoàn Offshore IT của Nhật Bản lớn nhất tại Việt Nam.
+      </p>
+      <footer>
+        <h3>Đây là footer</h3>
+      </footer>
+    </main>
+  </body>
+</html>

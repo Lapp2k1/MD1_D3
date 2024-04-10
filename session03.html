@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>form element</form>
+
+    <form>
+      <label>First name:</label><br />
+      <input type="text" name="first" value="Mickey" /><br />
+      <label>Last name:</label><br />
+      <input type="text" name="last" value="Mouse" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <form action="https://www.google.com.vn">
+      <input type="text" name="input" />
+      <input type="submit" value="Tìm kiếm" />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/" method="get">
+      <input type="text" name="input" />
+      <input type="submit" value="Tìm kiếm" />
+    </form>
+<!-- xem thông tin đã gửi bằng cách vào network trong inspect element chọn thẻ payload -->
+    <form action="https://learn.rikkeiacademy.com/" method="post">
+      <input type="text" name="input" />
+      <input type="submit" value="Tìm kiếm" />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/">
+      <fieldset>
+        <legend>Personal information</legend>
+        <label>First name:</label><br />
+        <input type="text" name="firstName" value="Mickey" /><br />
+        <label>Last name:</label><br />
+        <input type="text" name="lastName" value="Mouse" /><br /><br />
+        <input type="submit" value="Tìm kiếm" />
+      </fieldset>
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/">
+      <label>Password:</label>
+      <input type="password" name="password" />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/">
+      <label>Sở thích:</label><br />
+      <input type="checkbox" />Du lịch<br />
+      <input type="checkbox" />Thể thao<br />
+      <input type="checkbox" />Nấu ăn<br />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/">
+      <!-- chú ý phải có name giống nhau-->
+      <label>Sở thích:</label><br />
+      <input type="radio" name="a" value="Du lịch" />Du lịch<br />
+      <input type="radio" name="a" value="Thể thao" />Thể thao<br />
+      <input type="radio" name="a" value="Nấu ăn" />Nấu ăn<br />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/">
+      <label>Account:</label>
+      <input type="text" name="account" value="admin" /><br />
+      <label>Sở thích:</label><br />
+      <input type="radio" name="a" value="Du lịch" />Du lịch<br />
+      <input type="radio" name="a" value="Thể thao" />Thể thao<br />
+      <input type="radio" name="a" value="Nấu ăn" />Nấu ăn<br />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/" method="get">
+      <label>Account:</label>
+      <input type="text" name="account" value="admin" /><br />
+      <label>Sở thích:</label><br />
+      <input name="a" value="travel" type="radio" />Du lịch<br />
+      <input name="a" name="sport" type="radio" />Thể thao<br />
+      <input name="a" name="cooking" type="radio" />Nấu ăn<br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <form action="https://learn.rikkeiacademy.com/" method="get">
+      <label>Account:</label>
+      <input type="hidden" name="account" value="admin" /><br />
+      <label>Sở thích:</label><br />
+      <input name="a" value="travel" type="radio" />Du lịch<br />
+      <input name="a" name="sport" type="radio" />Thể thao<br />
+      <input name="a" name="cooking" type="radio" />Nấu ăn<br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <!-- input button khác button , button mặc định là submit-->
+    <form action="https://learn.rikkeiacademy.com/" method="get">
+      <button type="button">
+        <img
+          src="https://haycafe.vn/wp-content/uploads/2022/02/anh-meo-cute-hinh-cute-meo.jpg"
+          width="100px"
+        />
+      </button>
+      <input type="button" value="OK" onclick="msg()" />
+      <input type="number" name="tuổi" value="0" />
+      <input type="color" name="color" value="màu" />
+
+      <script>
+        function msg() {
+          alert("Hello world!");
+        }
+      </script>
+    </form>
+    <form action="https://learn.rikkeiacademy.com/" method="get">
+      <label>Description:</label><br />
+      <textarea cols="50" rows="4">
+This is a very very long text text text text text text</textarea
+      >
+    </form>
+
+    <select name="city">
+      <option value="hn">Hà Nội</option>
+      <option value="hp">Hải Phòng</option>
+      <option value="dn">Đà Nẵng</option>
+      <option value="sg">Sài Gòn</option>
+      <option value="ct">Cần Thơ</option>
+    </select>
+
+    <select name="city" multiple>
+      <option value="hn">Hà Nội</option>
+      <option value="hp">Hải Phòng</option>
+      <option value="dn">Đà Nẵng</option>
+      <option value="sg">Sài Gòn</option>
+      <option value="ct">Cần Thơ</option>
+    </select>
+  </body>
+</html>
